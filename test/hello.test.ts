@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable import/default */
 import { APIGatewayProxyEvent, Context } from 'aws-lambda';
 import { handler } from '../src/functions/hello';
 
