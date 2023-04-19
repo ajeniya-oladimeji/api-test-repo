@@ -13,6 +13,9 @@ functions:
       - http: 
           path: api/hello
           method: get
+          documentation:
+          summary: "Create User"
+          description: "Creates a user and then sends a generated password email"
   goodbye:
     handler: src/functions/goodbye.handler
     events:
@@ -23,6 +26,7 @@ functions:
 
 # Serverless plugins
 plugins:
+  - serverless-auto-swagger
   - serverless-plugin-typescript
   - serverless-offline
 
